@@ -15,6 +15,22 @@ Remove PDF Watermark
 
 
 
-Get the 1st,3rd,5th columns from a CSV file
+Print Selected Columns of a CSV file
 ---------------------------------------
-`awk -F ',' '{print $1,$3,$5}' input.csv > output.csv`
+
+print the 1st,3rd,5th columns
+
+
+`awk -F ',' '{print $1,$3,$5}' input.csv`
+
+add a header before print
+
+`awk -F ',' 'BEGIN {print "index,col1,col2"} {print $1,$3,$5}' input.csv`
+
+use comma to seperate output, OFS for "output field seperator"
+
+`awk -F ',' '{OFS=","}{print $1,$3,$5}' input.csv`
+
+change print to printf
+
+`awk -F ',' 'BEGIN {print "index,col1,col2"} {printf("%s,%s,%s\n",$1,$3,$5}' input.csv`
