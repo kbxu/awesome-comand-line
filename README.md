@@ -40,7 +40,7 @@ Generate a Random Password in Linux Terminal
 
 `date +%s | sha256sum | base64 | head -c 32 ; echo`
 
-While having public key added to authorized_keys but still prompts for password
+While having public key added to authorized_keys but the terminal still asks for password
 ---------------------------------------
 
 **check for the below ownerships for user ufo**
