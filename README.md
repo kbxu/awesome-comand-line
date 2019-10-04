@@ -40,3 +40,11 @@ Generate a Random Password in Linux Terminal
 
 `date +%s | sha256sum | base64 | head -c 32 ; echo`
 
+While having public key added to authorized_keys but still prompts for password
+---------------------------------------
+
+**check for the below ownerships for user ufo**
+
+ - /home/ufo ownership is 700
+ - /home/ufo/.ssh ownership is 700
+ - /home/ufo/.ssh/authorized_keys ownership is 600
