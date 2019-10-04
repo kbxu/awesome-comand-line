@@ -34,3 +34,9 @@ use comma to seperate output, OFS for "output field seperator"
 change print to printf
 
 `awk -F ',' 'BEGIN {print "index,col1,col2"} {printf("%s,%s,%s\n",$1,$3,$5}' input.csv`
+
+Generate a Random Password in Linux Terminal
+---------------------------------------
+
+`date +%s | sha256sum | base64 | head -c 32 ; echo`
+
