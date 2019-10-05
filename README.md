@@ -54,3 +54,9 @@ Conda Configuration
  - Put `~/Anaconda3/condabin` in system search path
  - Run `conda config --set auto_activate_base true` to activate base env when terminal starts (doesn't work for windows dos somehow)
  
+ 
+Get Bandwidth of Network Interface
+---------------------------------------
+ - DOS `wmic NIC where NetEnabled=true get Name, Speed` [ref](https://superuser.com/a/412956)
+ - POWERSHELL `Get-NetAdapter | where Status -eq "Up" | select InterfaceDescription, LinkSpeed` [ref](https://superuser.com/a/412956)
+ - BASH `sudo ethtool <interface> | grep Speed` [ref](https://serverfault.com/a/207478) or `cat /sys/class/net/<interface>/speed` [ref](https://serverfault.com/a/770662)
