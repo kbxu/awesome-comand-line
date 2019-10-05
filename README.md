@@ -45,6 +45,12 @@ While having public key added to authorized_keys but the terminal still asks for
 
 **check for the below ownerships for user ufo**
 
- - /home/ufo ownership is 700
- - /home/ufo/.ssh ownership is 700
- - /home/ufo/.ssh/authorized_keys ownership is 600
+ - `/home/ufo` ownership is 700
+ - `/home/ufo/.ssh` ownership is 700
+ - `/home/ufo/.ssh/authorized_keys` ownership is 600
+
+Conda Configuration
+---------------------------------------
+ - Put `~/Anaconda3/condabin` in system search path
+ - Run `conda config --set auto_activate_base true` to activate base env when terminal starts (doesn't work for windows dos somehow)
+ 
