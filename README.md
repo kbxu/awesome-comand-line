@@ -59,7 +59,7 @@ Get Bandwidth of Network Interface
  - POWERSHELL `Get-NetAdapter | where Status -eq "Up" | select InterfaceDescription, LinkSpeed` [ref](https://superuser.com/a/412956)
  - BASH `sudo ethtool <interface> | grep Speed` [ref](https://serverfault.com/a/207478) or `cat /sys/class/net/<interface>/speed` [ref](https://serverfault.com/a/770662)
 
-Prepare a Start-up Script for Windows DOS Terminal (similar as ~/.bashrc in linux)
+Prepare a Start-up Script for Windows DOS Terminal (similar as ~/.bashrc in linux) [ref](https://stackoverflow.com/a/17405182/3431997)
 ---------------------------------------
  - Edit the `"%"USERPROFILE"%\init.cmd"` script (script location could be anywhere) and put in commands such as `activate` for conda environment.
  
