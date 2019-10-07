@@ -60,3 +60,11 @@ Get Bandwidth of Network Interface
  - DOS `wmic NIC where NetEnabled=true get Name, Speed` [ref](https://superuser.com/a/412956)
  - POWERSHELL `Get-NetAdapter | where Status -eq "Up" | select InterfaceDescription, LinkSpeed` [ref](https://superuser.com/a/412956)
  - BASH `sudo ethtool <interface> | grep Speed` [ref](https://serverfault.com/a/207478) or `cat /sys/class/net/<interface>/speed` [ref](https://serverfault.com/a/770662)
+
+Prepare a Start-up Script for Windows DOS Terminal (similar as ~/.bashrc in linux)
+---------------------------------------
+ - Edit the `"%"USERPROFILE"%\init.cmd"` script (script location could be anywhere) and put in commands such as `activate` for conda environment.
+ 
+ - Run `reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun ^ /t REG_EXPAND_SZ /d "%"USERPROFILE"%\init.cmd" /f`
+ 
+ - To remove the start-up operation, run `reg delete "HKCU\Software\Microsoft\Command Processor" /v AutoRun`
