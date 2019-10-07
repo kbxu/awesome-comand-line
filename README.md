@@ -36,16 +36,14 @@ Print Selected Columns of a CSV file
 Generate a Random Password in Linux Terminal
 ---------------------------------------
 
-`date +%s | sha256sum | base64 | head -c 32 ; echo`
+   `date +%s | sha256sum | base64 | head -c 32 ; echo`
 
-While having public key added to authorized_keys but the terminal still asks for password
+SSH Asks for `password` When `authorized_keys` is Corrected Configured (with public keys)
 ---------------------------------------
-
-**check for the below ownerships for user ufo**
-
- - `/home/ufo` ownership is 700
- - `/home/ufo/.ssh` ownership is 700
- - `/home/ufo/.ssh/authorized_keys` ownership is 600
+ - Make sure the ownerships of user **ufo** are:
+ - 700 for `/home/ufo`
+ - 700 for `/home/ufo/.ssh`
+ - 600 for `/home/ufo/.ssh/authorized_keys`
 
 Conda Configuration
 ---------------------------------------
