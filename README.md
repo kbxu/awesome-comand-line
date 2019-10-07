@@ -35,8 +35,7 @@ Print Selected Columns of a CSV file
 
 Generate a Random Password in Linux Terminal
 ---------------------------------------
-
-   `date +%s | sha256sum | base64 | head -c 32 ; echo`
+ - `date +%s | sha256sum | base64 | head -c 32 ; echo`
 
 SSH Asks for `password` When `authorized_keys` is Corrected Configured (with public keys)
 ---------------------------------------
