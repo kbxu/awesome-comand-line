@@ -63,3 +63,8 @@ Prepare a Start-up Script for Windows DOS Terminal (similar as ~/.bashrc in linu
  - Run `reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun ^ /t REG_EXPAND_SZ /d "%"USERPROFILE"%\init.cmd" /f`
  
  - To remove the start-up operation, run `reg delete "HKCU\Software\Microsoft\Command Processor" /v AutoRun`
+ 
+ Mount Remote Drive
+---------------------------------------
+ - mount `sudo sshfs -o allow_other username@serveIP:remote_folder local_mount_point`
+ - unmount `sudo fusermount -u local_mount_point`
