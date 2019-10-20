@@ -1,7 +1,7 @@
 Windows Configuration Operation
 =============================
 
-Turn off real time protection permenantlly with group policy (the regedit method doesn't work)
+Turn off real time protection permenantlly with group policy (the regedit method doesn't work) [ref](https://techloris.com/how-to-disable-windows-defender/)
 ---------------------------------------
 1. Win+R: `gpedit.msc`
 2. Navigate with "Computer Configuration --> Administrator Templates --> Windows Components --> Windows Defender"
