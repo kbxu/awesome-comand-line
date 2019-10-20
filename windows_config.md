@@ -1,4 +1,4 @@
-Windows Configuration Operation
+Windows Configurations
 =============================
 
 Turn off real time protection permenantlly with group policy (the regedit method doesn't work) [ref](https://techloris.com/how-to-disable-windows-defender/)
