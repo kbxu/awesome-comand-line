@@ -1,4 +1,4 @@
-Cygwin Operation
+Cygwin Configuration
 =============================
 
 Xserver
